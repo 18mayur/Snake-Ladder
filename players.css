@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/Task_Html_CSS/Snake&Ladder/Images/game-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+button {
+  border: none;
+  outline: none;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(226, 37, 37) 0%,
+    rgb(211, 49, 49) 82.8%
+  );
+  padding: 10px 23px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 7px !important;
+  transition: all ease 0.1s !important;
+  box-shadow: 0px 5px 0px 0px #899944f5 !important;
+}
+.ladders-snakes {
+  width: 35px;
+  position: absolute;
+  transform-origin: bottom;
+}
+
+.start {
+  background-image: url("/Task_Html_CSS/Snake&Ladder/Images/pngegg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid black;
+  position: absolute;
+  top: 88.2%;
+  left: 36%;
+  background-color: lightsteelblue;
+}
+button:active {
+  transform: translateY(5px) !important;
+  box-shadow: 0px 0px 0px 0px #899944f5 !important;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.container .inner-container .main-info {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  background: radial-gradient(
+    465px at -15.1% -25%,
+    rgb(17, 130, 193) 0%,
+    rgb(67, 166, 238) 49%,
+    rgb(126, 203, 244) 90.2%
+  ); /* background-color: ; */
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.3rem;
+  align-items: center;
+  border-radius: 12px;
+}
+.container .inner-container .player-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.container .inner-container .player-info .player-1,
+.player-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  color: #000000;
+}
+.container .inner-container .player-info .player-1 .name1 {
+  color: darkorange;
+  letter-spacing: 0.2px;
+}
+.container .inner-container .diceRoll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.container .inner-container .diceRoll .subDice {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.container .game-board-outer {
+  width: 765px;
+  border: 2px solid black;
+  background-color: #62b6cb;
+}
+.container .game-board {
+  position: relative;
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: repeat(10, 1fr);
+  width: 700px;
+  margin: 0.7rem 2rem;
+}
+
+.box {
+  padding-left: 0.2rem;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+}
+.box1 {
+  background: #d6d4a0;
+}
+.box2 {
+  background: #62b6cb;
+}
+.piece-1 {
+  left: 35px;
+  position: absolute;
+  transform-origin: bottom;
+  transition: all 0.5s ease-in-out;
+  /* width: 35px !important; */
+  /* height: 35px !important; */
+}
+.piece-2 {
+  left: 0px;
+  position: absolute;
+  transform-origin: bottom;
+  transition: all 0.5s ease-in-out;
+  /* width: 35px !important; */
+  /* height: 35px !important; */
+}

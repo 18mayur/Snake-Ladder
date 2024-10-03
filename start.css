@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaini&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/Task_Html_CSS/PokeGame/images/forest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+label {
+  margin-bottom: 0.8rem;
+}
+.input {
+  margin-top: 0.6rem;
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%) !important;
+  background-color: white;
+}
+.btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.7em 2.2em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em !important;
+  transition: all 0.2s;
+  border: none !important;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: white !important;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.heading {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading h1 {
+  /* padding: 1.8rem 2rem; */
+  /* background-image: url("/Task_Html_CSS/Snake&Ladder/Images/wood.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Jaini", system-ui;
+  font-weight: 500;
+  font-size: 6rem;
+  color: #1b1b1b;
+}
+.heading h1 #sp1 {
+  background: linear-gradient(
+    110.1deg,
+    rgb(34, 126, 34) 2.9%,
+    rgb(168, 251, 60) 90.3%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.heading h1 #sp2 {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 197, 61) 0%,
+    rgb(255, 94, 7) 90%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.heading img {
+  top: 0px;
+  position: absolute;
+  left: 50px;
+}
+.container {
+  margin: 3rem 36rem;
+  padding: 1.8rem 2rem;
+  background-image: url("/Task_Html_CSS/Snake&Ladder/Images/wood.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* margin: auto; */
+  margin-top: 3rem;
+  /* width: 20.5% !important; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  border-radius: 23px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+.container .input-box {
+  width: 100%;
+}
+.container .input-box input {
+  width: 18em;
+}
+.container .checkboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container .checkboxes .peaces {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .checkboxes .peaces .labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .checkboxes .peaces .labels span {
+  margin: 0.5rem 0.5rem;
+}
