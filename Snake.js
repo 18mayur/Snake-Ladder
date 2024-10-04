@@ -51,12 +51,14 @@ if (ch1[0] === "red" && ch1[1] === "green") {
 } else {
   setImageForPieces("default", "default");
 }
+
 let random = Math.floor(Math.random() * 100) + 1;
 // console.log(random);
 exitBtn.addEventListener("click", () => {
   localStorage.clear();
   location.href = "startPage.html";
 });
+// for random ladders---------------
 
 // let originalArray = [
 //   [1, 38],
@@ -65,7 +67,7 @@ exitBtn.addEventListener("click", () => {
 //   [13, 46],
 //   [21, 42],
 //   [28, 84],
-//   [33, 49],
+//   // [33, 49],
 //   [74, 92],
 //   [50, 69],
 //   [62, 81],
@@ -88,6 +90,7 @@ exitBtn.addEventListener("click", () => {
 // }
 
 // let ladderPosition = getRandomUniqueValues(originalArray);
+//-------------------------------------------------------------------------------------
 
 let ladderPosition = [
   [1, 38],
@@ -99,7 +102,6 @@ let ladderPosition = [
   [72, 91],
   [80, 99],
   [44, 79],
-  // [43, 61],
 ];
 let snakesPosition = [
   [7, 17],
