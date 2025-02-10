@@ -102,6 +102,8 @@ let ladderPosition = [
   [72, 91],
   [80, 99],
   [44, 79],
+  // [41, 63],
+  // [1, 100],
 ];
 let snakesPosition = [
   [7, 17],
